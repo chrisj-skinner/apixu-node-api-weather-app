@@ -38,7 +38,13 @@ followed by any of the following queries:
 E.G
 
 ```sh
-$ node app.js London 14025 IV26TW
+$ node app.js London 76430
+```
+
+```sh
+It's Mist in Albany right now and a frightfully cold 21.6 deg C!
+
+It's Overcast  in London right now and an awfuly sweltering 7 deg C!
 ```
 
 ### Development
