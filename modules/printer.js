@@ -1,13 +1,21 @@
-// Print out message
-function printMessage(username, badgeCount, points) {
-	var message = username + " has " + badgeCount + " total badge(s) and " + points + " points in Javascript." + date;
-	console.log(message);
-}
+// Display report
+function printReport(location, condition, tempQuote, temp_c){
+	message = "The current weather report for " + location + " is " + condition + "and a " + tempQuote + " " + temp_c + " degrees C.";
 
-// Print out error message
-function printError(error){
-	console.error(error.message);
+	console.log('\n' + message);
 };
 
-module.exports.printMessage = printMessage;
+// Display error
+function printError(error, location){
+	if (error.code == 1006) {
+		error.message = error.message.replace('.', '');
+		message = error.message + " for '" + location + "'.\nCheck the location was entered correctly.";
+	} else {
+		message = "There was a problem with the connection. (" + error.message + ")";
+
+	};
+	console.error('\n' + message);
+};
+
+module.exports.printReport = printReport;
 module.exports.printError = printError;
