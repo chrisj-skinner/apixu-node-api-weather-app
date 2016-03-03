@@ -1,17 +1,8 @@
 var http = require("http");
 var printer = require("./printer");
-var quotes = {
-		wind: [
-			"mild",
-			"gentle"
-		],
-		temp: [
-			"balmy",
-			"sweltering"
-		]
-	};
+var quotes = require("./quotes");
 var messages = "";
-var quote = "";
+
 function get(location){
 	
 	try {
@@ -32,13 +23,10 @@ function get(location){
 			// In the event of an error. The body returns an array with a value of error - check for this.
 			if (!body.error){
 				
+				// Get weather quotes
+				quotes.getQuotes(body.current.temp_c, body.current.wind_mph);
+
 				// Print data
-				if (body.current.temp_c > 14) {
-					tempQuote = quotes.temp[0] 
-				} else {
-					tempQuote = quotes.temp[1];
-				}
-					
 				printer.printReport(body.location.name, body.current.condition.text, tempQuote, body.current.temp_c);
 
 			} else {

@@ -1,7 +1,6 @@
 // Display report
 function printReport(location, condition, tempQuote, temp_c){
-	message = "The current weather report for " + location + " is " + condition + "and a " + tempQuote + " " + temp_c + " degrees C.";
-
+	message = "It's " + condition + " in " + location + " right now and " + tempQuote + " " + temp_c + " deg C!";
 	console.log('\n' + message);
 };
 
@@ -9,7 +8,7 @@ function printReport(location, condition, tempQuote, temp_c){
 function printError(error, location){
 	if (error.code == 1006) {
 		error.message = error.message.replace('.', '');
-		message = error.message + " for '" + location + "'.\nCheck the location was entered correctly.";
+		message = error.message + " for '" + location + "'.\nCome on - check that spelling...";
 	} else {
 		message = "There was a problem with the connection. (" + error.message + ")";
 
