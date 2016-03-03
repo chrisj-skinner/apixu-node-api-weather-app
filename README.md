@@ -37,11 +37,13 @@ followed by any of the following queries:
 
 E.G
 
+Input:
+
 ```sh
 $ node app.js London 76430
 ```
 
-would result in
+Output:
 
 ```sh
 A frightfully cold 21.6 deg C in Albany right now, mist and remarkably pleasant with 12.5 mph of wind.
