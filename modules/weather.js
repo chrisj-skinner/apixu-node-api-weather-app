@@ -27,7 +27,8 @@ function get(location){
 				quotes.getQuotes(body.current.temp_c, body.current.wind_mph);
 
 				// Print data
-				printer.printReport(body.location.name, body.current.condition.text, tempQuote, body.current.temp_c);
+				printer.printReport(body.location.name, body.current.condition.text, tempQuote, windQuote, body.current.temp_c, body.current.wind_mph);
+				// console.log(body);
 
 			} else {
 

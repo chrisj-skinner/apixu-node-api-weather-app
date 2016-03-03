@@ -1,12 +1,12 @@
 var quote = "";
 var quotes = {
 		wind: [
-			"a remarkably pleasant",
-			"a rather blustery"
+			"remarkably pleasant",
+			"rather blustery"
 		],
 		temp: [
-			"a frightfully cold",
-			"an awfuly sweltering"
+			"A frightfully cold",
+			"An awfuly sweltering"
 		]
 	};
 
@@ -20,7 +20,7 @@ function getQuotes(temp, wind){
 	}
 
 	// Wind quote
-	if (wind > 14) {
+	if (wind > 10) {
 		windQuote = quotes.wind[0] 
 	} else {
 		windQuote = quotes.wind[1];

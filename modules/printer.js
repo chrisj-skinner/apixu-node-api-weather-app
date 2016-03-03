@@ -1,6 +1,6 @@
 // Display report
-function printReport(location, condition, tempQuote, temp_c){
-	message = "It's " + condition + " in " + location + " right now and " + tempQuote + " " + temp_c + " deg C!";
+function printReport(location, condition, tempQuote, windQuote, temp_c, wind_mph){
+	message = tempQuote + " " + temp_c + " deg C in " + location + " right now, " + condition.toLowerCase() + " and " + windQuote + " with " + wind_mph + " mph of wind.";
 	console.log('\n' + message);
 };
 
