@@ -56,7 +56,7 @@ This app is currently under Development with the following todo list:
   - Add x number of day(s) detailed forecast for location(s)
   - Develop into a Web App
     - Add search functionalitly within Web App
-  - AND finally, to enhance the personalitly and sacasmometer of the app
+  - AND finally, to enhance the personalitly and sacasmometer of the app (currently standing at -3 out of 10..)
 
 Feel free to clone this repo and develop it to how you see fit!
 
