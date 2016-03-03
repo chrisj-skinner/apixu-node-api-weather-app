@@ -42,9 +42,9 @@ $ node app.js London 76430
 ```
 
 ```sh
-It's Mist in Albany right now and a frightfully cold 21.6 deg C!
+A frightfully cold 21.6 deg C in Albany right now, mist and remarkably pleasant with 12.5 mph of wind.
 
-It's Overcast  in London right now and an awfuly sweltering 7 deg C!
+An awfuly sweltering 7 deg C in London right now, overcast  and rather blustery with 9.4 mph of wind.
 ```
 
 ### Development
