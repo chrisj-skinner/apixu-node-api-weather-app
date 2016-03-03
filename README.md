@@ -41,6 +41,8 @@ E.G
 $ node app.js London 76430
 ```
 
+would result in
+
 ```sh
 A frightfully cold 21.6 deg C in Albany right now, mist and remarkably pleasant with 12.5 mph of wind.
 
