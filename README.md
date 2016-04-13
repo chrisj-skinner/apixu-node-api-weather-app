@@ -1,6 +1,6 @@
 # Apixu Node api ~~Weather~~ Sarcastic App
 
-Apixu Node api Weather App is a node app with a difference - displaying the current weather report for a given location(s) accompanied with an extremely polite and totally non sarcastic English tone.
+Apixu Node API Weather App is a node app with a difference - displaying the current weather report for a given location(s) (via JSON) accompanied with an extremely polite and totally non sarcastic English tone.
 
 ### Version
 0.0.1
